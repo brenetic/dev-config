@@ -23,3 +23,8 @@ node_modules
 .idea
 .vim/swaps
 .vscode
+
+# Logs and databases #
+*.log
+*.sql
+*.sqlite
