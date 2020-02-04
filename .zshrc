@@ -65,6 +65,7 @@ plugins=(
   git
   warhol
   zsh-nvm
+  fzf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -104,7 +105,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 . $(brew --prefix)/etc/profile.d/z.sh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_BASE=/usr/local/bin/fzf
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 export PATH=$PATH:/Users/brenetic/go/bin
