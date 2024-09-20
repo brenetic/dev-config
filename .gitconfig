@@ -43,3 +43,5 @@
         added = green
         changed = red
         untracked = yellow
+[pull]
+	rebase = true

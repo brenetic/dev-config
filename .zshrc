@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 #= If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -7,7 +14,7 @@ export ZSH="/Users/brenetic/.oh-my-zsh"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -107,10 +114,6 @@ eval "$(pyenv init -)"
 
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_BASE=/usr/local/bin/fzf
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-export PATH=$PATH:/Users/brenetic/go/bin
-eval "$(goenv init -)"
 
 # added by travis gem
 [ -f /Users/brenetic/.travis/travis.sh ] && source /Users/brenetic/.travis/travis.sh
@@ -124,3 +127,11 @@ eval "$(goenv init -)"
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/brenetic/.nvm/versions/node/v10.15.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/brenetic/.nvm/versions/node/v10.15.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
+export PATH="/usr/local/sbin:$PATH"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Created by `pipx` on 2024-08-17 10:20:58
+export PATH="$PATH:/Users/brenetic/.local/bin"
+
