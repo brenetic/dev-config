@@ -135,5 +135,8 @@ export PATH="/usr/local/sbin:$PATH"
 # Created by `pipx` on 2024-08-17 10:20:58
 export PATH="$PATH:/Users/brenetic/.local/bin"
 
-alias n="nvim"
-
+alias n='nvim'
+alias lzd='lazydocker'
+alias lzg='lazygit'
+alias zel='zellij'
+alias zelc='zellij -l compact'
