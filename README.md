@@ -1,2 +1,2 @@
-# Dotfiles
+# Dev Config
 
