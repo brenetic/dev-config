@@ -71,7 +71,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
   git
   warhol
-  zsh-nvm
   fzf
 )
 
