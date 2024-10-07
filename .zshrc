@@ -15,6 +15,7 @@ export ZSH="/Users/brenetic/.oh-my-zsh"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -119,3 +120,10 @@ alias lzd='lazydocker'
 alias lzg='lazygit'
 alias zel='zellij'
 alias zelc='zellij -l compact'
+
+alias ls='eza -lh --group-directories-first --icons --hyperlink'
+alias lsa='ls -a'
+alias lt='eza --tree --level=2 --long --icons --git'
+alias lta='lt -a'
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
