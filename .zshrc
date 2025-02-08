@@ -71,6 +71,7 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  poetry
   warhol
   fzf
 )
@@ -126,8 +127,12 @@ alias lsa='ls -a'
 alias lt='eza --tree --level=2 --long --icons --git'
 alias lta='lt -a'
 
-. "/opt/homebrew/opt/asdf/libexec/asdf.sh"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+
+# Created by `pipx` on 2025-01-27 22:20:10
+export PATH="$PATH:/Users/brenetic/.local/bin"
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
