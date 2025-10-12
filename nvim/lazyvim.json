@@ -4,14 +4,15 @@
     "lazyvim.plugins.extras.coding.mini-surround",
     "lazyvim.plugins.extras.editor.mini-files",
     "lazyvim.plugins.extras.lang.docker",
+    "lazyvim.plugins.extras.lang.elixir",
     "lazyvim.plugins.extras.lang.json",
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.ruby",
-    "lazyvim.plugins.extras.lang.terraform",
     "lazyvim.plugins.extras.lang.yaml"
   ],
+  "install_version": 7,
   "news": {
-    "NEWS.md": "10960"
+    "NEWS.md": "11866"
   },
-  "version": 7
+  "version": 8
 }
