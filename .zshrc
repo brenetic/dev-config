@@ -150,3 +150,6 @@ zellij_tab_name_update() {
 
  zellij_tab_name_update
  chpwd_functions+=(zellij_tab_name_update)
+
+eval "$(zoxide init zsh)"
+
